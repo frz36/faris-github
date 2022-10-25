@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>i Door</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+<!--Nav Bar Atas-->
+</head>
+<body>
+<header class="header">
+    <div class="contaier">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="./images/i-door logo.png" alt="" width="150">
+            </a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#banner" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#booking" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offers" class="nav-link">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!--Home & Banner-->
+<main>
+    <div id="banner" class="hero">
+        <div class="container">
+            <div class="main-heading">
+                <h1 class="title">Discover</h1>
+                <h2 class="subtitle">Luxury hotels</h2>
+            </div>
+            <a href="#booking" class="btn btn-gradient">Explore now
+                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+        </div>
+    </div>
+
+
+<!--menu Booking-->
+    <section id="booking" class="booking">
+        <div class="container">
+            <form action="" class="book-form">
+                <div class="input-group">
+                    <label for="nama" class="input-label">Nama</label>
+                    <input type="text" class="input" id="Nama">
+                </div>
+                <div class="input-group">
+                    <label for="no.hp" class="input-label">Nomor handphone</label>
+                    <input type="text" class="input" id="Nomor handphone">
+                </div>
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check-in</label>
+                    <input type="date" class="input" id="check-in">
+                </div>
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check-out</label>
+                    <input type="date" class="input" id="check-out">
+                </div>
+                <div class="input-group">
+                    <label for="pilih cabang" class="input-label">Pilih cabang</label>
+                    <select class="options" id="cabang">
+                        <option value="0">jakarta</option>
+                        <option value="0">Medan</option>
+                        <option value="0">surabaya</option>
+                        <option value="0">Bali</option>
+                    </select> 
+                </div>
+                <button type="submit" class="btn form-btn btn-purple">Submit
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!--cabang hotel-->
+    <section class="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Explore</span>
+                <span class="sub-heading">Kami memiliki 4 cabang di-Indonesia</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-hotels">
+                    <img src="./images/jakarta.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Jakarta</h5>
+                    <span class="hotel-price">From 600k/malam</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#jakarta" class="btn btn-gradient">Detail
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="grid-item featured-hotels">
+                    <img src="./images/medan.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Medan</h5>
+                    <span class="hotel-price">From 200/malam</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#medan" class="btn btn-gradient">Detail
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="grid-item featured-hotels">
+                    <img src="./images/surabaya.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">surabaya</h5>
+                    <span class="hotel-price">From 500k/malam</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#surabaya" class="btn btn-gradient">Detail
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="grid-item featured-hotels">
+                    <img src="./images/bali.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Bali</h5>
+                    <span class="hotel-price">From 600k/malam</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#bali" class="btn btn-gradient">Detail
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+<!--diskon-->
+    <div id="offers" class="section offers">
+        <div class="container">
+            <div class="offers-content">
+                <div class="discount">
+                    40% off
+                </div>
+                <h5 class="hotel-name">i-Doors Medan</h5>
+                <div class="hotel-rating">
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star rating"></i>
+                    <i class="fas fa-star-half rating"></i>
+                </div>
+                <p class="paragraph">
+                    diskon khusus bagi orang yang yang bernama mega, baik laki-laki maupun perempuan tanpa adanya batasan usia.
+                </p>
+                <a href="#" class="btn btn-gradient">Redeem
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+<!--hotel jakarta-->
+    <section id="jakarta" class="rooms">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">i-Doors Jakarta</span>
+                <span class="sub-heading">superior & luxury rooms</span>
+            </h5>
+            <div class="grid rooms-grid">
+                <div class="room-grids">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_2.jpg" alt="">
+                        <h5 class="room-name">superior</h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">600k <span class="per-malam"></span></span>
+                        <p class="paragraph">
+                            jumlah kamar tersedia = 20
+                        <p class="paragraph">
+                            jumlah kamar terisi = 15
+                            </p>
+                        </p>
+                        <p class="paragraph">
+                            jumlah seluruh kamar = 35
+                            </p>
+                        </p>
+                        <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_1.jpg" alt="">
+                        <h5 class="room-name">Luxury</h5>
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">900k <span class="per-night"></span></span>
+                        <p class="paragraph">
+                            jumlah kamar tersedia = 10
+                        <p class="paragraph">
+                            jumlah kamar terisi = 25
+                            </p>
+                        </p>
+                        <p class="paragraph">
+                            jumlah seluruh kamar = 35
+                            </p>
+                        </p>
+                        <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--hotel medan-->
+<section id="medan" class="rooms">
+    <div class="container">
+        <h5 class="section-head">
+            <span class="heading">i-Doors Medan</span>
+            <span class="sub-heading">superior & luxury rooms</span>
+        </h5>
+        <div class="grid rooms-grid">
+            <div class="room-grids">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_4.jpg" alt="">
+                    <h5 class="room-name">superior</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">200k <span class="per-malam"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 10
+                    <p class="paragraph">
+                        jumlah kamar terisi = 15
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 25
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+            <div class="rooms-grid">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_3.jpg" alt="">
+                    <h5 class="room-name">Luxury</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">600k <span class="per-night"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 15
+                    <p class="paragraph">
+                        jumlah kamar terisi = 10
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 25
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--hotel bali-->
+<section id="bali" class="rooms">
+    <div class="container">
+        <h5 class="section-head">
+            <span class="heading">i-Doors Bali</span>
+            <span class="sub-heading">superior & luxury rooms</span>
+        </h5>
+        <div class="grid rooms-grid">
+            <div class="room-grids">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_8.jpg" alt="">
+                    <h5 class="room-name">superior</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">600k <span class="per-malam"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 10
+                    <p class="paragraph">
+                        jumlah kamar terisi = 30
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 40
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+            <div class="rooms-grid">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_6.jpg" alt="">
+                    <h5 class="room-name">Luxury</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">900k <span class="per-night"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 15
+                    <p class="paragraph">
+                        jumlah kamar terisi = 25
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 40
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--hotel surabaya-->
+<section id="surabaya" class="rooms">
+    <div class="container">
+        <h5 class="section-head">
+            <span class="heading">i-Doors Surabaya</span>
+            <span class="sub-heading">superior & luxury rooms</span>
+        </h5>
+        <div class="grid rooms-grid">
+            <div class="room-grids">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_10.jpg" alt="">
+                    <h5 class="room-name">superior</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">600k <span class="per-malam"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 10
+                    <p class="paragraph">
+                        jumlah kamar terisi = 15
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 25
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+            <div class="rooms-grid">
+                <div class="image-wrap">
+                    <img class="room-image" src="./images/room_9.jpg" alt="">
+                    <h5 class="room-name">Luxury</h5>
+                </div>
+                <div class="room-info-wrap">
+                    <span class="room-price">900k <span class="per-night"></span></span>
+                    <p class="paragraph">
+                        jumlah kamar tersedia = 10
+                    <p class="paragraph">
+                        jumlah kamar terisi = 15
+                        </p>
+                    </p>
+                    <p class="paragraph">
+                        jumlah seluruh kamar = 25
+                        </p>
+                    </p>
+                    <a href="order.html" class="btn rooms-btn">Book now &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Hubungi kami</span>
+            </h5>
+            <div class="contact-content">
+                <div class="traveler-wrap">
+                    <img src="./images/traveler.png" alt="">
+                </div>
+                <form action="" class="form contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Nama" required>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                        <div class="input-group">
+                            <input type="email" class="input" placeholder="E-mail" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="input" placeholder="Subject" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="input" cols="30" rows="8" placeholder="Pesan" required></textarea>
+                            <span class="bar"></span>
+                        </div>
+                    <button type="submit" class="btn form-btn btn-purple">Kirim pesan
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content-brand">
+                <a href="index.html" class="logo">
+                    <img class="logo-image" src="./images/i-door logo.png" alt="" width="150">
+                </a>
+                <div class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus consequuntur dolorum veniam porro iure quis iusto repudiandae aperiam fugiat id maiores nulla harum ducimus, vero delectus odio vitae excepturi ipsa?
+                </div>
+            </div>
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow us</h4>
+                <div class="social-media">
+                    <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="sm-link"><i class="fab fa-facebook"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="main.js"></script>
+</body>
+</html> 

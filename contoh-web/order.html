@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>i Door</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+<!--Nav Bar Atas-->
+</head>
+<body>
+<header class="header">
+    <div class="contaier">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="./images/i-door logo.png" alt="" width="150">
+            </a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<section class="detail" id="detail">
+    <div class="container">
+      <h1>Detail Information</h1>
+      <div class="content grid">
+        <div class="box">
+          <span>Nama Pengunjung</span> <br>
+          <input type="nama"  id="nama" name="nama" placeholder="Masukkan nama"/><br />
+        </div>
+        <div class="box">
+            <span>Nomor Telepon</span> <br>
+            <input type="nomor" id="nomor" placeholder="Masukkan nomor hp" /><br />
+        </div>
+        <div class="box">
+          <span>Check-In</span> <br>
+          <input type="date" id="CheckIn" name="CheckIn" placeholder="check-in" /><br />
+        </div>
+        <div class="box">
+            <span>Check-Out</span> <br>
+            <input type="date" id="CheckOut" name="CheckOut" placeholder="check-out" /><br />
+        </div>
+        <div class="box">
+          <span>Jumlah kamar dipesan</span> <br>
+          <input type="number" id="JumlahKamar" name="JumlahKamar" placeholder="Masukkan jumlah" /><br />
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <input type="button" value="Check Availability" onclick="cetak()" position="center">
+            <br>
+            <p id="cetak-nama"></p>
+            <p id="cetak-nomor"></p>
+            <p id="cetak-CheckIn"></p>
+            <p id="cetak-CheckOut"></p>
+            <p id="cetak-JumlahKamar"></p>
+  
+
+
+    <script>
+        function cetak() {
+            var nama = document.getElementById("nama").value ;
+            var nomor = document.getElementById("nomor").value ;
+            var CheckIn = document.getElementById("CheckIn").value ;
+            var CheckOut= document.getElementById("CheckOut").value ;
+            var JumlahKamar = document.getElementById("JumlahKamar").value ;
+
+            if (nama !="" && nomor !="") {
+                document.getElementById("cetak-nama").innerHTML = nama
+                document.getElementById("cetak-nomor").innerHTML = nomor
+                document.getElementById("cetak-CheckIn").innerHTML = CheckIn
+                document.getElementById("cetak-CheckOut").innerHTML = CheckOut
+                document.getElementById("cetak-JumlahKamar").innerHTML = JumlahKamar
+                return True;
+            }else {
+                alert('jan lupa diisi yach!!');
+            }
+            }
+    </script>
